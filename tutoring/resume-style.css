@@ -28,7 +28,7 @@ p {
 
 /*Shaded boxes*/
 .shaded-box {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1), -8px -8px 8px white;
 }
 
 
@@ -71,7 +71,7 @@ a:active {
         'review review';
     grid-template-columns: min-content auto;
     row-gap: 0;
-    column-gap: 20px;
+    column-gap: 1.5cm;
     max-width: 25cm;
 }
 
@@ -112,8 +112,13 @@ a:active {
 
 /*Career overview*/
 #overview {
-    padding-top: 0pt;
+    padding: 0pt;
     grid-area: overview;
+}
+
+.resume-itemize {
+    text-align: justify;
+    margin-left: 15pt;
 }
 
 .resume-entry {
