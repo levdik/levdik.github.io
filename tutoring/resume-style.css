@@ -92,6 +92,7 @@ a:active {
 #name {
     grid-area: name;
     padding-bottom: 0pt;
+    padding-left: 0pt;
 }
 
 
