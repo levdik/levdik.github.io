@@ -204,4 +204,13 @@ p.subyears {
         flex-grow: 1;
         flex-shrink: 1;
     }
+
+    #review {
+        margin-top: 0pt;
+    }
+
+    #personal {
+        margin-top: 15pt;
+        margin-bottom: 30pt;
+    }
 }
