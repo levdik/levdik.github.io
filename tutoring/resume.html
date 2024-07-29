@@ -1,246 +1,134 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-div {
-  /*  
-  border: 1px outset red;
-  border-style: dashed;
-  */
-  font-family: -apple-system, BlinkMacSystemFont,
-  "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
-  sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-}
-img {
-  border-radius: 50%;
-}
-h1 {
-  margin-top: 0pt;
-  margin-bottom: -6pt;
-}
-h2 {
-  margin-top: 25pt;
-  margin-bottom: 4pt;
-}
-h4 {
-  margin-top: 0pt;
-  margin-bottom: -10pt;
-}
+<title>Евгений Левдик — репетитор</title>
 
-a {
-  color: DodgerBlue;
-  text-decoration: none;
-}
-a:visited {
-  color: DodgerBlue;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-a:active {
-  text-decoration: underline;
-}
-
-th.years {
-  width: 75pt;
-  vertical-align: top;
-}
-th, td {
-  text-align: justify;
-  padding: 4pt;
-}
-.outer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'personal overview'
-    '. overview'
-    'review review';
-  grid-template-columns: min-content auto;
-  gap: 20px;
-  max-width: 25cm;
-}
-
-.info-block {
-  text-align: left;
-  vertical-align: top;
-  padding: 15pt;
-  border-radius: 5pt;
-}
-#personal {
-  grid-area: personal;
-  background-color: #F0F0F0;
-  padding-top: 25pt;
-}
-#overview {
-  grid-area: overview;
-}
-#review {
-  grid-area: review;
-  padding: 0pt;
-}
-
-.review_container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15pt 5pt;
-  justify-content: space-between;
-  align-items: stretch;
-}
-.review_box {
-  padding: 15pt;
-  text-align: left;
-  vertical-align: top;
-  border-radius: 5pt;
-  
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 10cm;
-
-  background-color: #F0F0F0;yy
-}
-#review h2 {
-  margin-bottom: 15pt;
-}
-div.review_box h4 {
-  margin-top: 5pt;
-  margin-bottom: -5pt;
-}
-div.review_box p {
-  text-align: justify;
-  margin-bottom: 0pt;
-}
-p.subyears {
-  color: gray;
-  font-size: 80%;
-}
-
-@media screen and (max-width: 20cm) {
-  .grid-container {
-    grid-template-areas:
-      'personal'
-      'overview'
-      'review';
-    grid-template-columns: auto;
-  }
-  #personal {
-    text-align: center;
-    grid-area: personal;
-    background-color: #F0F0F0;
-    padding-top: 25pt;
-  }
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="resume-style.css">
 </head>
+
 <body>
 
 <div class="outer">
+    <div class="grid-container">
+        <!-- <div class="info-block", id=personal> -->
+        <div id=personal-outer>
+            <div class="info-block shaded-box", id=personal>
+                <img id="userpic" src="userpic.jpg" 
+                width=200 alt="Фото">
 
-  <div class="grid-container">
+                <p>
+                    <b>Telegram</b>
+                    <br>
+                    <a href="https://t.me/eugene_levdik" target="_blank">@eugene_levdik</a>
+                </p>
 
-    <div class="info-block", id=personal>
-      <img src="userpic.jpg" width=200 alt="Фото">
+                <p>
+                    <b>Электронная почта</b>
+                    <br>
+                    <a onclick="copyMail()">eugene.levdik@gmail.com</a>
+                </p>
 
-      <h4>Telegram</h4>
-      <p><a href="https://t.me/eugene_levdik" target="_blank">@eugene_levdik</a></p>
+                <p>
+                    <b>WhatsApp</b>
+                    <br>
+                    <a href="https://wa.me/+393515795930" target="_blank">+39 351 5795930</a>
+                </p>
+            </div>
+        </div>
 
-      <h4>Электронная почта</h4>
-      <p><a onclick="copyMail()">eugene.levdik@gmail.com</a></p>
+        <div class="info-block" id="name">
+            <h1>Евгений Левдик</h1>
+            <p>Репетитор по физике и математике</p>
+        </div>
 
-      <h4>WhatsApp</h4>
-      <p><a href="https://wa.me/+393515795930" target="_blank">+39 351 5795930</a></p>
+        <div class="info-block", id=overview>
+            <h2>Образование</h2>
+            
+            <span class="resume-entry">
+                <div class="resume-years"><b>2023 – ...</b></div>
+                <div>Магистратура по Прикладной математике, Университет Сиены, Сиена, Италия</div>
+            </span>
+
+            <span class="resume-entry">
+                <div class="resume-years"><b>2018 – 2023</b></div>
+                <div>Фотоника и Оптоинформатика, Университет ИТМО, Санкт-Петербург</div>
+            </span>
+
+            <span class="resume-entry">
+                <div class="resume-years"><b>2014 – 2018</b></div>
+                <div>Лицей «Физико-техническая школа» им. Ж. И. Алфёрова, Санкт-Петербург</div>
+            </span>
+
+            
+            <h2>Преподавание</h2>
+            
+            <span class="resume-entry">
+                <div class="resume-years"><b>2018 – 2023</b></div>
+                <div>Летняя Физическая Школа, преподаватель</div>
+            </span>
+
+            <span class="resume-entry">
+                <div class="resume-years"><b>2019 – 2022</b></div>
+                <div>Образовательный центр «Сириус», педагог ежегодной образовательной смены «Физика: старт в науку»</div>
+            </span>
+
+            <span class="resume-entry">
+                <div class="resume-years"><b>2019 – 2022</b></div>
+                <div>Городской центр физического образования при Лицее «Физико-техническая школа», преподаватель экспериментального кружка</div>
+            </span>
+
+            <span class="resume-entry">
+                <div class="resume-years"><b>2020 – 2021</b></div>
+                <div>Кружковское движение, автор материалов для онлайн курса</div>
+            </span>
+        </div>
+
+        <div class="info-block", id=review>
+            <h2>Отзывы моих учеников</h2>
+            <div class="review-container">
+                <div class="review-box shaded-box">
+                    <h4>Суббот Диана</h4>
+                    <p class="subyears">Годы обучения: 2022-2023</p>
+                    <p>Репетитор понадобился на 1 курсе бакалавриата НИЯУ МИФИ. Физики было много, опыта мало.
+                        Евгений мне очень помог разобраться со всем непонятным материалом, успешно подготовил к
+                        контрольным мероприятиям. В итоге за 2 года по физике оценки 4 или 5. Разбирали все, что было
+                        непонятно и даже больше. Спасибо большое Евгению за обучение и спокойствие на экзаменах!</p>
+                </div>
+
+                <div class="review-box shaded-box">
+                    <h4>Шувалова Виктория</h4>
+                    <p class="subyears">Годы обучения: 2023-2024</p>
+                    <p>Я начала заниматься с репетитором, чтобы подготовиться к ОГЭ по физике и более подробно изучать
+                        материал школьного курса физики. Занятия проходили хорошо, все темы очень подробно объяснялись.
+                        За этот год я улучшила свои знания в рамках этого предмета и хорошо сдала экзамен</p>
+                </div>
+                <!--
+                <div class="review-box shaded-box">
+                    <h4>Галкин Александр</h4>
+                    <p class="subyears">Годы обучения: 2023-2024</p>
+                    <p></p>
+                </div>
+                -->
+                <div class="review-box shaded-box">
+                    <h4>Олухов Егор</h4>
+                    <p class="subyears">Годы обучения: 2023-2024</p>
+                    <p>Заниматься я решил, потому что мне не хватало знай школы, я желал большего багажа знаний и
+                        умений. Многие темы были разобраны вне школьной программы, благодаря чему я узнал много нового.
+                        Теория я перестал заучиваться, а стал понимать. Любая задача перестала казаться сложной,
+                        главное не бояться писать. Я сдал ЕГЭ по физике на 84 балла, написал ДВИ по физике в МГУ
+                        им. Ломоносова на 79 баллов </p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="info-block", id=overview>
-
-      <h1>Евгений Левдик</h1>
-      <p>Репетитор по физике и математике</p>
-      
-      <h2>Образование</h2>
-      <table style="width: 100%">
-         <tr>
-            <th class="years">2023 – ...</th>
-            <td>Магистратура по Прикладной математике, Университет Сиены, Сиена, Италия</td>
-         </tr>
-
-         <tr>
-            <th class="years">2018 – 2023</th>
-            <td>Фотоника и Оптоинформатика, Университет ИТМО, Санкт-Петербург</td>
-         </tr>
-         
-         <tr>
-            <th class="years">2014 – 2018</th>
-            <td>Лицей «Физико-техническая школа» им. Ж. И. Алфёрова, Санкт-Петербург</td>
-         </tr>
-      </table>
-      
-      <h2>Преподавание</h2>
-      <table style="width: 100%">
-         <tr>
-            <th class="years">2018 – 2023</th>
-            <td>Летняя Физическая Школа, преподаватель</td>
-         </tr>
-
-         <tr>
-            <th class="years">2019 – 2022</th>
-            <td>Образовательный центр «Сириус», педагог ежегодной образовательной смены «Физика: старт в науку»</td>
-         </tr>
-
-         <tr>
-            <th class="years">2019 – 2022</th>
-            <td>Городской центр физического образования при Лицее «Физико-техническая школа», преподаватель экспериментального кружка</td>
-         </tr>
-
-         <tr>
-            <th class="years">2020 – 2021</th>
-            <td>Кружковское движение, автор материалов для онлайн курса</td>
-         </tr>
-      </table>
-    </div>
-
-    <div class="info-block", id=review>
-      <h2>Отзывы моих учеников</h2>
-      <div class="review_container">
-         <div class="review_box">
-            <h4>Суббот Диана</h4>
-            <p class="subyears">Годы обучения: 2022-2023</p>
-            <p>Репетитор понадобился на 1 курсе бакалавриата НИЯУ МИФИ. Физики было много, опыта мало. Евгений мне очень помог разобраться со всем непонятным материалом, успешно подготовил к контрольным мероприятиям. В итоге за 2 года по физике оценки 4 или 5. Разбирали все, что было непонятно и даже больше. Спасибо большое Евгению за обучение и спокойствие на экзаменах!</p>
-         </div>
-         <div class="review_box">
-            <h4>Шувалова Виктория</h4>
-            <p class="subyears">Годы обучения: 2023-2024</p>
-            <p>Я начала заниматься с репетитором, чтобы подготовиться к ОГЭ по физике и более подробно изучать материал школьного курса физики. Занятия проходили хорошо, все темы очень подробно объяснялись. За этот год я улучшила свои знания в рамках этого предмета и хорошо сдала экзамен</p>
-         </div>
-<!--
-         <div class="review_box">
-            <h4>Олухов Егор</h4>
-            <p class="subyears">Годы обучения: 2023-2024</p>
-            <p></p>
-         </div>
-         <div class="review_box">
-            <h4>Галкин Александр</h4>
-            <p class="subyears">Годы обучения: 2023-2024</p>
-            <p></p>
-         </div>
--->
-      </div>
-    </div>
-
-  </div>
 </div>
 
 <script>
-   function copyMail(e) {
-      e.preventDefault();
-      navigator.clipboard.writeText("eugene.levdik@gmail.com");
-      }
+    function copyMail(e) {
+        navigator.clipboard.writeText("eugene.levdik@gmail.com");
+    }
 </script>
 
 </body>
